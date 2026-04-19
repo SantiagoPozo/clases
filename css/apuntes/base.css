@@ -1,0 +1,47 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--color-texto);
+}
+.math-block {
+  background-color: var(--color-fondo-math);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  border-left: 4px solid var(--color-primario);
+}
+.example-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.exercise-card {
+  border: 1px solid var(--color-borde-card);
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background: white;
+}
+.boss-section {
+  border: 2px solid var(--color-borde-boss);
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--color-fondo-boss);
+}
+.step {
+  color: var(--color-paso);
+  font-weight: bold;
+}
+.arrow-split {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  font-weight: bold;
+  padding-left: 1rem;
+  border-left: 2px dashed var(--color-borde-split);
+}
+.arrow-item::before {
+  content: "→";
+  margin-right: 0.5rem;
+  color: var(--color-primario);
+}
